@@ -86,7 +86,7 @@ export default function MemoryMapSection() {
               </div>
 
               <p className="mt-4 text-white/50 text-sm leading-relaxed line-clamp-2">
-                {location.memory}
+                {(location as any).memory}
               </p>
 
               <motion.p
@@ -154,7 +154,7 @@ export default function MemoryMapSection() {
               <p className="text-white/70 text-base leading-relaxed text-center italic"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                "{selectedLocation.memory}"
+                "{(selectedLocation as any).memory}"
               </p>
             </motion.div>
           </motion.div>
