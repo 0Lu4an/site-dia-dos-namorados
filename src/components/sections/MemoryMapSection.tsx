@@ -79,9 +79,9 @@ export default function MemoryMapSection() {
                     className="text-white font-semibold text-base mb-1 leading-snug"
                     style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   >
-                    {location.name}
+                     {(location as any).name}
                   </h3>
-                  <p className="text-white/40 text-sm">{location.place}</p>
+                  <p className="text-white/40 text-sm">{(location as any).place}</p>
                 </div>
               </div>
 
