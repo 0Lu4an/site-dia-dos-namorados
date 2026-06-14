@@ -141,16 +141,16 @@ export default function MemoryMapSection() {
 
               <div className="flex items-center gap-2 mb-2 justify-center">
                 <MapPin size={12} className="text-rose-400/60" />
-                <span className="text-rose-400/70 text-xs">{selectedLocation.city}</span>
+                <span className="text-rose-400/70 text-xs">{(selectedLocation as any).city}</span>
               </div>
 
               <h3
                 className="text-white text-xl font-bold mb-1 text-center"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                {selectedLocation.name}
+                {(selectedLocation as any).name}
               </h3>
-              <p className="text-white/40 text-sm text-center mb-6">{selectedLocation.place}</p>
+              <p className="text-white/40 text-sm text-center mb-6">{(selectedLocation as any).place}</p>
               <p className="text-white/70 text-base leading-relaxed text-center italic"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
