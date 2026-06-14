@@ -72,7 +72,7 @@ export default function MemoryMapSection() {
                   <div className="flex items-center gap-2 mb-1">
                     <MapPin size={12} className="text-rose-400/60 flex-shrink-0" />
                     <span className="text-rose-400/70 text-xs font-medium tracking-wide truncate">
-                      {location.city}
+                      {(location as any).city}
                     </span>
                   </div>
                   <h3

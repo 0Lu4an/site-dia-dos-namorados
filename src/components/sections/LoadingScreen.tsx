@@ -11,7 +11,7 @@ const ALL_PHOTOS = [
   ...galleryPhotos.map(g => g.src),
 ].filter(Boolean) as string[];
 
-// 6 slots de memória flutuando pela tela — posições fixas, fotos rodam
+// 6 slots de memória flutuando pela tela — posições fixas, fotos rodam. Se quiser alterar tamanho é no: w: 180 por exemplo.
 const SLOTS = [
   { x: "8%",  y: "18%", w: 180, rotate: -6,  delay: 0.3,  dur: 7,   glow: "rose"  },
   { x: "72%", y: "10%", w: 135, rotate:  5,  delay: 0.7,  dur: 8.5, glow: "gold"  },
